@@ -152,16 +152,17 @@ export const moreProjects: MiniProject[] = [
     title: "Crestforge Construction",
     description:
       "Squarespace site for a construction company. Hired on a Friday with no prior Squarespace experience, delivered the finished site that Sunday.",
+    image: "/images/Crest.png",
     live: "https://crestforgeconstruction.org",
     tags: ["Client Work", "Squarespace"],
   },
   {
     title: "Kings Tech Solutions",
     description:
-      "Production client site for a smart energy and security company operating across 12+ Nigerian states: solar, CCTV, wiring.",
+      "Production site for a smart energy and security company operating across 12+ Nigerian states: solar, CCTV, wiring. Private client work.",
     image: "/images/kings-tech.png",
     live: "https://kingstechsolutions.org",
-    tags: ["Client Work", "React", "SEO"],
+    tags: ["Private Client Work", "React", "SEO"],
   },
   {
     title: "Apex TechHub",
@@ -191,8 +192,8 @@ export const moreProjects: MiniProject[] = [
   {
     title: "Gnade Store",
     description:
-      "E-commerce storefront with a dedicated Django backend covering catalog, cart, and order flows.",
-    github: "https://github.com/Mexican1922/gnade-store",
+      "Flagship e-commerce build: React storefront with a dedicated Django backend covering catalog, cart, and order flows. Source is private.",
+    image: "/images/gnade.png",
     tags: ["React", "Django", "E-commerce"],
   },
 ];

@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <Link to="/" className="font-mono text-sm font-medium text-ink-100">
-          <span className="text-accent-500">~/</span>valentine-azolibe
+          <span className="text-accent-500">~/</span>ValentineCodes
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">

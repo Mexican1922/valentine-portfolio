@@ -3,7 +3,7 @@ export const site = {
   role: "Full-Stack Developer",
   tagline: "React & Django",
   location: "Nigeria (GMT+1), open to remote roles worldwide",
-  email: "valentinechibuzor480@gmail.com",
+  email: "valentine@collan.dev",
   phone: "+2347049495832",
   github: "https://github.com/Mexican1922",
   linkedin: "https://www.linkedin.com/in/valentine-azolibe-45578b323",
