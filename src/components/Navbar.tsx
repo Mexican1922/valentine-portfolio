@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { site } from "../data/site";
+import Logo from "./Logo";
 
 const links = [
   { label: "Work", to: "/#work" },
@@ -32,8 +33,9 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <Link to="/" className="font-mono text-sm font-medium text-ink-100">
-          <span className="text-accent-500">~/</span>ValentineCodes
+        <Link to="/" className="flex items-center gap-2.5 font-mono text-sm font-medium text-ink-100">
+          <Logo />
+          ValentineCodes
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
