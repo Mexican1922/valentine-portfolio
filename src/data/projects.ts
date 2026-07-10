@@ -5,6 +5,7 @@ export interface CaseStudy {
   summary: string;
   image?: string;
   gallery?: string[];
+  phoneShots?: string[];
   private?: boolean;
   live?: string;
   github?: string;
@@ -33,8 +34,8 @@ export const caseStudies: CaseStudy[] = [
       "Premium textile catalog and bespoke fashion design platform: a React storefront powered by a Django commerce backend, live on its own domain.",
     private: true,
     live: "https://fredantextiles.com",
-    image: "/images/fredan-shop.png",
-    gallery: ["/images/fredan-bespoke.png"],
+    image: "/images/fredan.png",
+    gallery: ["/images/fredan-shop.png", "/images/fredan-bespoke.png"],
     stack: [
       "React 19",
       "TypeScript",
@@ -69,8 +70,8 @@ export const caseStudies: CaseStudy[] = [
       "A music streaming service with playlists, artist pages, search, listening history, and a recommendation engine.",
     live: "https://uda-obi.vercel.app",
     github: "https://github.com/Mexican1922/uda-frontend",
-    image: "/images/uda-now-playing.png",
-    gallery: ["/images/uda-search.png", "/images/uda-queue.png"],
+    image: "/images/uda-home.png",
+    gallery: ["/images/uda-now-playing.png", "/images/uda-queue.png"],
     stack: [
       "React",
       "TypeScript",
@@ -136,12 +137,12 @@ export const caseStudies: CaseStudy[] = [
       "A digital wallet app: send money, buy airtime and data, pay bills, and track every transaction. Installs like a native app.",
     live: "https://naija-padipay.vercel.app",
     github: "https://github.com/Mexican1922/padipay",
-    image: "/images/padipay-home.png",
-    gallery: [
+    image: "/images/padi-more-options.png",
+    phoneShots: [
+      "/images/padipay-home.png",
       "/images/padipay-send.png",
       "/images/padipay-add.png",
       "/images/Padi-Activity.png",
-      "/images/padi-more-options.png",
       "/images/padipay-profile.png",
       "/images/padipay-notification.png",
     ],

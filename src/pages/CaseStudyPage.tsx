@@ -65,12 +65,27 @@ export default function CaseStudyPage() {
         )}
 
         {cs.gallery && cs.gallery.length > 0 && (
-          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {cs.gallery.map((src) => (
               <div key={src} className="overflow-hidden rounded-xl border border-ink-800">
                 <img
                   src={src}
                   alt={`${cs.title} screenshot`}
+                  loading="lazy"
+                  className="w-full h-auto"
+                />
+              </div>
+            ))}
+          </div>
+        )}
+
+        {cs.phoneShots && cs.phoneShots.length > 0 && (
+          <div className="mt-4 grid grid-cols-3 gap-3 sm:grid-cols-6">
+            {cs.phoneShots.map((src) => (
+              <div key={src} className="aspect-[470/928] overflow-hidden rounded-lg border border-ink-800">
+                <img
+                  src={src}
+                  alt={`${cs.title} mobile screenshot`}
                   loading="lazy"
                   className="h-full w-full object-cover object-top"
                 />
