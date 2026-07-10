@@ -194,6 +194,7 @@ export const moreProjects: MiniProject[] = [
     description:
       "Flagship e-commerce build: React storefront with a dedicated Django backend covering catalog, cart, and order flows. Source is private.",
     image: "/images/gnade.png",
+    live: "https://gnade-store.vercel.app/",
     tags: ["React", "Django", "E-commerce"],
   },
 ];
