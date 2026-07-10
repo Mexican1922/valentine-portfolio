@@ -64,6 +64,21 @@ export default function CaseStudyPage() {
           </div>
         )}
 
+        {cs.gallery && cs.gallery.length > 0 && (
+          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
+            {cs.gallery.map((src) => (
+              <div key={src} className="overflow-hidden rounded-xl border border-ink-800">
+                <img
+                  src={src}
+                  alt={`${cs.title} screenshot`}
+                  loading="lazy"
+                  className="h-full w-full object-cover object-top"
+                />
+              </div>
+            ))}
+          </div>
+        )}
+
         <section className="mt-14">
           <h2 className="font-mono text-sm text-accent-500">The problem</h2>
           <p className="mt-3 leading-relaxed text-ink-200">{cs.problem}</p>

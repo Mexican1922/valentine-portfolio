@@ -4,6 +4,7 @@ export interface CaseStudy {
   kind: string;
   summary: string;
   image?: string;
+  gallery?: string[];
   private?: boolean;
   live?: string;
   github?: string;
@@ -29,8 +30,11 @@ export const caseStudies: CaseStudy[] = [
     title: "Fredan Textiles",
     kind: "Full-Stack · Private Client Work",
     summary:
-      "Premium textile catalog and bespoke fashion design platform: a React storefront powered by a Django commerce backend.",
+      "Premium textile catalog and bespoke fashion design platform: a React storefront powered by a Django commerce backend, live on its own domain.",
     private: true,
+    live: "https://fredantextiles.com",
+    image: "/images/fredan-shop.png",
+    gallery: ["/images/fredan-bespoke.png"],
     stack: [
       "React 19",
       "TypeScript",
@@ -46,7 +50,8 @@ export const caseStudies: CaseStudy[] = [
       "React 19 + TypeScript storefront with a catalog, gallery, and bespoke request flows, animated with Framer Motion",
       "Django backend split into focused apps: products, orders, gallery, and newsletter",
       "REST API consumed by the frontend; admin panel gives the owner full control of inventory and content",
-      "Deployed the backend to Render with a production Procfile and runtime configuration",
+      "Installable PWA with a web manifest, so customers can add the store to their home screen",
+      "Deployed the backend to Render with a production Procfile; frontend live at fredantextiles.com on a custom domain",
     ],
     architecture: [
       { label: "Frontend", detail: "React 19 · TypeScript · Vite · Tailwind v4 · React Router" },
@@ -54,7 +59,7 @@ export const caseStudies: CaseStudy[] = [
       { label: "Infra", detail: "Render (backend) · Vercel (frontend)" },
     ],
     outcome:
-      "A production commerce platform the owner manages entirely through the Django admin, with no developer needed for day-to-day catalog and order updates. Source is private client work; architecture available on request.",
+      "Live in production at fredantextiles.com. The owner manages the entire catalog and order flow through the Django admin, with no developer needed for day-to-day updates. Source is private client work; architecture available on request.",
   },
   {
     slug: "uda-music",
@@ -62,7 +67,10 @@ export const caseStudies: CaseStudy[] = [
     kind: "Full-Stack",
     summary:
       "A music streaming service with playlists, artist pages, search, listening history, and a recommendation engine.",
+    live: "https://uda-obi.vercel.app",
     github: "https://github.com/Mexican1922/uda-frontend",
+    image: "/images/uda-now-playing.png",
+    gallery: ["/images/uda-search.png", "/images/uda-queue.png"],
     stack: [
       "React",
       "TypeScript",
@@ -76,6 +84,7 @@ export const caseStudies: CaseStudy[] = [
     build: [
       "React + TypeScript frontend: album, artist, playlist, search, and library pages with a global store and service layer",
       "Full auth lifecycle (register, email verification, login, password reset) wired to Django accounts",
+      "Installable PWA: listeners can add it to their home screen like a native app",
       "Django backend organized by domain: accounts, music, library, history, recommendations, integrations",
       "Recommendation app builds suggestions from listening history",
     ],
@@ -94,6 +103,12 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "An energy dashboard where households track electricity usage together: house setup, member invites, and real-time data.",
     image: "/images/metermate.png",
+    gallery: [
+      "/images/metermate-dashboard.png",
+      "/images/metermate-create-house.png",
+      "/images/metermate-payment.png",
+      "/images/meter-admin.png",
+    ],
     live: "https://naija-metermate.vercel.app",
     github: "https://github.com/Mexican1922/metermate",
     stack: ["Next.js 15", "React 19", "Supabase", "Tailwind CSS", "Vercel"],
@@ -116,11 +131,21 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "padipay",
     title: "PadiPay",
-    kind: "Fintech",
+    kind: "Fintech · PWA",
     summary:
-      "A digital wallet app: send money, buy airtime and data, pay bills, and track every transaction.",
+      "A digital wallet app: send money, buy airtime and data, pay bills, and track every transaction. Installs like a native app.",
+    live: "https://naija-padipay.vercel.app",
     github: "https://github.com/Mexican1922/padipay",
-    stack: ["React 19", "TypeScript", "Vite", "Context API", "Service layer"],
+    image: "/images/padipay-home.png",
+    gallery: [
+      "/images/padipay-send.png",
+      "/images/padipay-add.png",
+      "/images/Padi-Activity.png",
+      "/images/padi-more-options.png",
+      "/images/padipay-profile.png",
+      "/images/padipay-notification.png",
+    ],
+    stack: ["React 19", "TypeScript", "Vite", "PWA", "Context API", "Service layer"],
     problem:
       "Fintech UIs live or die on trust: flows must be fast, states must never be ambiguous, and every naira must be accounted for on screen.",
     build: [
@@ -128,6 +153,7 @@ export const caseStudies: CaseStudy[] = [
       "Transaction feed with detail views, notifications, and success states that confirm exactly what happened",
       "Typed service layer separating API concerns from UI; global state via context",
       "Auth flows (register, login, profile) matching real banking-app patterns",
+      "Installable PWA with a web manifest, built mobile-first like a real banking app",
     ],
     architecture: [
       { label: "Frontend", detail: "React 19 · TypeScript · Vite" },
