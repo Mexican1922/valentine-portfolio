@@ -170,7 +170,7 @@ export const moreProjects: MiniProject[] = [
   {
     title: "Collan",
     description:
-      "Co-founded a developer networking and collaboration platform with a community feed, project marketplace, live sessions, and real-time chat. Launched March 2026, crossed 1,000 users in two months, now approaching 2,000. V2 and a mobile app are in development.",
+      "Co-founded a social networking platform for techies to connect, collaborate, and build together, with a community feed, project marketplace, live sessions, and real-time chat. Launched March 2026, crossed 1,000 users in two months, now approaching 2,000. V2 and a mobile app are in development.",
     image: "/images/collan.png",
     live: "https://collan.dev",
     tags: ["Co-Founder", "SaaS", "Community"],
