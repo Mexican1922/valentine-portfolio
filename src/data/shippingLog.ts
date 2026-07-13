@@ -6,8 +6,7 @@ export interface LogEntry {
 }
 
 // Newest first. Add an entry every time you ship something. This section
-// is the portfolio's proof of momentum.
-// NOTE: dates below are estimates. Replace them with the real ones.
+// is the portfolio's proof of momentum. Dates come from the git history.
 export const shippingLog: LogEntry[] = [
   {
     date: "2026-07-10",
@@ -24,28 +23,28 @@ export const shippingLog: LogEntry[] = [
     tags: ["Client Work", "Squarespace"],
   },
   {
-    date: "2026-06-15",
+    date: "2026-06-08",
     title: "Shipped UDA recommendation engine",
     detail:
       "Django app generating music suggestions from per-user listening history.",
     tags: ["Django", "Python"],
   },
   {
-    date: "2026-05-20",
-    title: "Fredan Textiles backend live on Render",
+    date: "2026-06-04",
+    title: "Fredan Textiles live on fredantextiles.com",
     detail:
-      "Products, orders, gallery, and newsletter apps behind a DRF API, fully owner-managed via Django admin.",
-    tags: ["Django", "Render"],
+      "React storefront on a custom domain, backed by Django apps for products, orders, gallery, and newsletter on Render, fully owner-managed via Django admin.",
+    tags: ["Django", "React"],
   },
   {
-    date: "2026-04-28",
+    date: "2026-05-09",
     title: "PadiPay wallet flows complete",
     detail:
-      "Send money, airtime, data, bills: 14 typed screens with a dedicated service layer.",
+      "Send money, airtime, data, bills: 14 typed screens with a dedicated service layer, installable as a PWA.",
     tags: ["React", "Fintech"],
   },
   {
-    date: "2026-03-30",
+    date: "2026-03-21",
     title: "MeterMate live on Vercel",
     detail:
       "Next.js 15 household energy dashboard with Supabase realtime sync.",
