@@ -13,7 +13,7 @@ export const site = {
   intro:
     "I design and ship production web applications end to end: React and TypeScript on the frontend, Python and Django on the backend. I've built e-commerce platforms, fintech apps, a music streaming service, and client sites serving real businesses across Nigeria.",
   highlights: [
-    "Co-founder of Collan, a developer collaboration platform with 2,400+ active members",
+    "Co-founder of Collan, a developer collaboration platform approaching 2,000 members within months of launch",
     "Client work in production for energy, education, construction, and retail businesses",
     "Full-stack: React 19, TypeScript, Next.js, Django REST, PostgreSQL",
   ],

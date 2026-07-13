@@ -44,6 +44,13 @@ export const shippingLog: LogEntry[] = [
     tags: ["React", "Fintech"],
   },
   {
+    date: "2026-05-01",
+    title: "Collan crossed 1,000 users",
+    detail:
+      "Six weeks after launch, the developer collaboration platform I co-founded passed its first thousand members. V2 and a mobile app are now in development.",
+    tags: ["Co-Founder", "SaaS"],
+  },
+  {
     date: "2026-03-21",
     title: "MeterMate live on Vercel",
     detail:
@@ -51,10 +58,10 @@ export const shippingLog: LogEntry[] = [
     tags: ["Next.js", "Supabase"],
   },
   {
-    date: "2026-02-14",
-    title: "Collan passed 2,400 members",
+    date: "2026-03-15",
+    title: "Launched Collan V1",
     detail:
-      "The developer collaboration platform I co-founded keeps growing: feed, marketplace, live sessions.",
+      "Co-founded and launched a developer collaboration platform: community feed, project marketplace, live sessions, and real-time chat. Live at collan.dev.",
     tags: ["Co-Founder", "SaaS"],
   },
 ];
