@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import BuildInPublic from "../components/BuildInPublic";
 import SelectedWork from "../components/SelectedWork";
 import ShippingLog from "../components/ShippingLog";
 import MoreProjects from "../components/MoreProjects";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <BuildInPublic />
       <SelectedWork />
       <ShippingLog />
       <MoreProjects />

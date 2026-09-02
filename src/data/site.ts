@@ -8,10 +8,16 @@ export const site = {
   github: "https://github.com/Mexican1922",
   linkedin: "https://www.linkedin.com/in/valentine-azolibe-45578b323",
   x: "https://x.com/Vibe_with_val",
-  xHandle: "ValentineCodes",
+  xHandle: "Vibe_with_val",
   resume: "/Valentine-Azolibe-CV.pdf",
   intro:
     "I design and ship production web applications end to end: React and TypeScript on the frontend, Python and Django on the backend. I've built e-commerce platforms, fintech apps, a music streaming service, and client sites serving real businesses across Nigeria.",
+  // 100 consecutive days of shipping in public, with the Day 100 post as
+  // proof. Externally verifiable, which is what separates it from a claim.
+  buildInPublic: {
+    days: 100,
+    proof: "https://x.com/Vibe_with_val/status/2088517731775631751",
+  },
   highlights: [
     "Co-founder of Collan, a social networking platform for techies approaching 2,000 members within months of launch",
     "Client work in production for energy, education, construction, and retail businesses",
