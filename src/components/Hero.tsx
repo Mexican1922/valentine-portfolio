@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { site } from "../data/site";
+import MaterialIcon from "./MaterialIcon";
 
 const fade = {
   hidden: { opacity: 0, y: 16 },
@@ -37,10 +38,7 @@ export default function Hero() {
             className="mb-5 flex flex-wrap items-center gap-2"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-accent-500/30 bg-accent-500/10 px-3 py-1 font-mono text-xs text-accent-400">
-              <span
-                aria-hidden
-                className="h-1.5 w-1.5 rounded-full bg-accent-500"
-              />
+              <MaterialIcon name="work" size={13} />
               Available for work
             </span>
             <a
@@ -49,6 +47,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-full border border-ink-700 px-3 py-1 font-mono text-xs text-ink-300 transition-colors hover:border-accent-500/50 hover:text-accent-400"
             >
+              <MaterialIcon name="groups" size={13} />
               Co-founder @ Collan
               <span className="text-ink-500">·</span>
               <span className="text-ink-200">2,000+ techies</span>
