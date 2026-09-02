@@ -34,3 +34,94 @@ body {
   background: var(--color-accent-500);
   color: var(--color-ink-950);
 }
+
+/* ──────────────────────────────────────────
+   Ripple Loader
+   Concentric discs expanding out from the mark, after the Uiverse "ripple"
+   pattern (Smit-Prajapati). Retinted to the site's ink/accent palette: the
+   original's grey-on-grey would read as a foreign component here.
+   ────────────────────────────────────────── */
+.ripple-loader {
+  --size: 190px;
+  --duration: 2s;
+  height: var(--size);
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.ripple-loader .box {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(
+    0deg,
+    rgba(45, 212, 167, 0.05) 0%,
+    rgba(45, 212, 167, 0.12) 100%
+  );
+  border-top: 1px solid rgba(45, 212, 167, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.45) 0 10px 10px 0;
+  backdrop-filter: blur(5px);
+  animation: ripple var(--duration) infinite ease-in-out;
+}
+
+.ripple-loader .box:nth-child(1) {
+  inset: 40%;
+  z-index: 99;
+}
+.ripple-loader .box:nth-child(2) {
+  inset: 30%;
+  z-index: 98;
+  border-top-color: rgba(45, 212, 167, 0.7);
+  animation-delay: 0.2s;
+}
+.ripple-loader .box:nth-child(3) {
+  inset: 20%;
+  z-index: 97;
+  border-top-color: rgba(45, 212, 167, 0.5);
+  animation-delay: 0.4s;
+}
+.ripple-loader .box:nth-child(4) {
+  inset: 10%;
+  z-index: 96;
+  border-top-color: rgba(45, 212, 167, 0.32);
+  animation-delay: 0.6s;
+}
+.ripple-loader .box:nth-child(5) {
+  inset: 0%;
+  z-index: 95;
+  border-top-color: rgba(45, 212, 167, 0.18);
+  animation-delay: 0.8s;
+}
+
+.ripple-loader .logo {
+  position: absolute;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-content: center;
+  padding: 30%;
+}
+
+.ripple-loader .logo svg {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes ripple {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.45) 0 10px 10px 0;
+  }
+  50% {
+    transform: scale(1.3);
+    box-shadow: rgba(0, 0, 0, 0.45) 0 30px 20px 0;
+  }
+}
+
+/* The discs are decoration; without motion they would sit as five static
+   rings saying nothing, so hold them still and let the mark alone carry it. */
+@media (prefers-reduced-motion: reduce) {
+  .ripple-loader .box {
+    animation: none;
+  }
+}
