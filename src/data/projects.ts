@@ -34,8 +34,8 @@ export const caseStudies: CaseStudy[] = [
       "Premium textile catalog and bespoke fashion design platform: a React storefront powered by a Django commerce backend, live on its own domain.",
     private: true,
     live: "https://fredantextiles.com",
-    image: "/images/fredan.png",
-    gallery: ["/images/fredan-shop.png", "/images/fredan-bespoke.png"],
+    image: "/images/fredan.webp",
+    gallery: ["/images/fredan-shop.webp", "/images/fredan-bespoke.webp"],
     stack: [
       "React 19",
       "TypeScript",
@@ -69,9 +69,8 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "A music streaming service with playlists, artist pages, search, listening history, and a recommendation engine.",
     live: "https://uda-obi.vercel.app",
-    github: "https://github.com/Mexican1922/uda-frontend",
-    image: "/images/uda-home.png",
-    gallery: ["/images/uda-now-playing.png", "/images/uda-queue.png"],
+    image: "/images/uda-home.webp",
+    gallery: ["/images/uda-now-playing.webp", "/images/uda-queue.webp"],
     stack: [
       "React",
       "TypeScript",
@@ -103,15 +102,14 @@ export const caseStudies: CaseStudy[] = [
     kind: "Full-Stack · Next.js",
     summary:
       "An energy dashboard where households track electricity usage together: house setup, member invites, and real-time data.",
-    image: "/images/metermate.png",
+    image: "/images/metermate.webp",
     gallery: [
-      "/images/metermate-dashboard.png",
-      "/images/metermate-create-house.png",
-      "/images/metermate-payment.png",
-      "/images/meter-admin.png",
+      "/images/metermate-dashboard.webp",
+      "/images/metermate-create-house.webp",
+      "/images/metermate-payment.webp",
+      "/images/meter-admin.webp",
     ],
     live: "https://naija-metermate.vercel.app",
-    github: "https://github.com/Mexican1922/metermate",
     stack: ["Next.js 15", "React 19", "Supabase", "Tailwind CSS", "Vercel"],
     problem:
       "Nigerian households on prepaid meters share electricity costs but have no shared view of usage. MeterMate gives a household one dashboard: set up a house, invite members, track consumption.",
@@ -136,15 +134,14 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "A digital wallet app: send money, buy airtime and data, pay bills, and track every transaction. Installs like a native app.",
     live: "https://naija-padipay.vercel.app",
-    github: "https://github.com/Mexican1922/padipay",
-    image: "/images/padi-more-options.png",
+    image: "/images/padi-more-options.webp",
     phoneShots: [
-      "/images/padipay-home.png",
-      "/images/padipay-send.png",
-      "/images/padipay-add.png",
-      "/images/Padi-Activity.png",
-      "/images/padipay-profile.png",
-      "/images/padipay-notification.png",
+      "/images/padipay-home.webp",
+      "/images/padipay-send.webp",
+      "/images/padipay-add.webp",
+      "/images/Padi-Activity.webp",
+      "/images/padipay-profile.webp",
+      "/images/padipay-notification.webp",
     ],
     stack: ["React 19", "TypeScript", "Vite", "PWA", "Context API", "Service layer"],
     problem:
@@ -171,7 +168,7 @@ export const moreProjects: MiniProject[] = [
     title: "Collan",
     description:
       "Co-founded a social networking platform for techies to connect, collaborate, and build together, with a community feed, project marketplace, live sessions, and real-time chat. Launched March 2026, crossed 1,000 users in two months, now approaching 2,000. V2 and a mobile app are in development.",
-    image: "/images/collan.png",
+    image: "/images/collan.webp",
     live: "https://collan.dev",
     tags: ["Co-Founder", "SaaS", "Community"],
   },
@@ -179,7 +176,7 @@ export const moreProjects: MiniProject[] = [
     title: "Crestforge Construction",
     description:
       "Squarespace site for a construction company. Hired on a Friday with no prior Squarespace experience, delivered the finished site that Sunday.",
-    image: "/images/Crest.png",
+    image: "/images/Crest.webp",
     live: "https://crestforgeconstruction.org",
     tags: ["Client Work", "Squarespace"],
   },
@@ -187,7 +184,7 @@ export const moreProjects: MiniProject[] = [
     title: "Kings Tech Solutions",
     description:
       "Production site for a smart energy and security company operating across 12+ Nigerian states: solar, CCTV, wiring. Private client work.",
-    image: "/images/kings-tech.png",
+    image: "/images/kings-tech.webp",
     live: "https://kingstechsolutions.org",
     tags: ["Private Client Work", "React", "SEO"],
   },
@@ -195,7 +192,7 @@ export const moreProjects: MiniProject[] = [
     title: "Apex TechHub",
     description:
       "EdTech academy platform with course browsing, enrollment, and integrated payments.",
-    image: "/images/apex-techhub.png",
+    image: "/images/apex-techhub.webp",
     live: "https://apex-techhub.com",
     tags: ["Client Work", "Payments", "EdTech"],
   },
@@ -203,7 +200,7 @@ export const moreProjects: MiniProject[] = [
     title: "StockFlow",
     description:
       "Inventory management SaaS with role-based access, Firebase auth, live Firestore sync, and EN/POR multilingual support.",
-    image: "/images/stockflow.png",
+    image: "/images/stockflow.webp",
     live: "https://products-inventory-mgmt.vercel.app",
     tags: ["React", "Firebase", "SaaS"],
   },
@@ -211,7 +208,7 @@ export const moreProjects: MiniProject[] = [
     title: "Finance Tracker",
     description:
       "Personal finance dashboard with real-time spending analytics, savings goals, and a financial health score.",
-    image: "/images/finance-tracker.png",
+    image: "/images/finance-tracker.webp",
     live: "https://try-finance-tracker.vercel.app",
     github: "https://github.com/Mexican1922/finance-tracker",
     tags: ["React", "Firebase", "Fintech"],
@@ -220,7 +217,7 @@ export const moreProjects: MiniProject[] = [
     title: "Gnade Store",
     description:
       "Flagship e-commerce build: React storefront with a dedicated Django backend covering catalog, cart, and order flows. Source is private.",
-    image: "/images/gnade.png",
+    image: "/images/gnade.webp",
     live: "https://gnade-store.vercel.app/",
     tags: ["React", "Django", "E-commerce"],
   },
