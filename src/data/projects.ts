@@ -69,6 +69,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "A music streaming service with playlists, artist pages, search, listening history, and a recommendation engine.",
     live: "https://uda-obi.vercel.app",
+    github: "https://github.com/Mexican1922/uda-frontend",
     image: "/images/uda-home.webp",
     gallery: ["/images/uda-now-playing.webp", "/images/uda-queue.webp"],
     stack: [
@@ -110,6 +111,7 @@ export const caseStudies: CaseStudy[] = [
       "/images/meter-admin.webp",
     ],
     live: "https://naija-metermate.vercel.app",
+    github: "https://github.com/Mexican1922/metermate",
     stack: ["Next.js 15", "React 19", "Supabase", "Tailwind CSS", "Vercel"],
     problem:
       "Nigerian households on prepaid meters share electricity costs but have no shared view of usage. MeterMate gives a household one dashboard: set up a house, invite members, track consumption.",
@@ -134,6 +136,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "A digital wallet app: send money, buy airtime and data, pay bills, and track every transaction. Installs like a native app.",
     live: "https://naija-padipay.vercel.app",
+    github: "https://github.com/Mexican1922/padipay",
     image: "/images/padi-more-options.webp",
     phoneShots: [
       "/images/padipay-home.webp",
