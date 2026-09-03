@@ -2,6 +2,26 @@ import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import StackIcon from "./StackIcon";
 
+// Each item slides in from the left as its column arrives. Reading direction,
+// so the eye travels the list instead of scanning a static block.
+//
+// Total settle time is what matters: the stagger below plus the item duration
+// lands the longest column in about 0.6s. Past roughly a second this stops
+// reading as polish and starts reading as lag.
+const list = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.035 } },
+};
+
+const row = {
+  hidden: { opacity: 0, x: -10 },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.35, ease: [0.16, 1, 0.3, 1] as const },
+  },
+};
+
 const groups: { title: string; items: string[] }[] = [
   {
     title: "Frontend",
@@ -54,26 +74,36 @@ export default function Skills() {
           {groups.map((g, i) => (
             <motion.div
               key={g.title}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial="hidden"
+              whileInView="show"
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.45, delay: 0.06 * i }}
+              variants={{
+                hidden: { opacity: 0, y: 16 },
+                // No per-card delay: it would stack on top of the row stagger
+                // and push the last column past a second.
+                show: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.4, delayChildren: 0.08 * i + 0.1 },
+                },
+              }}
               className="rounded-xl border border-ink-800 bg-ink-900 p-6"
             >
               <h3 className="mb-4 font-mono text-sm font-medium text-accent-500">
                 {g.title}
               </h3>
-              <ul className="space-y-2.5">
+              <motion.ul variants={list} className="space-y-2.5">
                 {g.items.map((item) => (
-                  <li
+                  <motion.li
                     key={item}
+                    variants={row}
                     className="flex items-center gap-2.5 text-sm text-ink-200"
                   >
                     <StackIcon name={item} size={17} className="text-ink-400" />
                     {item}
-                  </li>
+                  </motion.li>
                 ))}
-              </ul>
+              </motion.ul>
             </motion.div>
           ))}
         </div>

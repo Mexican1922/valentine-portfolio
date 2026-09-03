@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Suspense, lazy } from "react";
+import { MotionConfig } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -29,6 +30,9 @@ export default function App() {
   const location = useLocation();
 
   return (
+    // `reducedMotion="user"` makes every framer animation on the site honour
+    // the OS setting, rather than each component remembering to check.
+    <MotionConfig reducedMotion="user">
     <div className="min-h-screen bg-ink-950 text-ink-200">
       <ScrollToTop />
       <Navbar />
@@ -43,5 +47,6 @@ export default function App() {
       </Suspense>
       <Footer />
     </div>
+    </MotionConfig>
   );
 }
