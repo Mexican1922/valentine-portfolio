@@ -7,11 +7,12 @@ import Logo from "./Logo";
  * Covers the viewport with the mark and nothing else — the nav and footer
  * framing an empty column reads as a hole in the page rather than a state.
  *
- * Draws nothing for `delay` ms: a warm-cache chunk resolves in a few
- * milliseconds, and a loader that appears and vanishes inside a frame looks
- * like a glitch.
+ * Appears immediately: MIN_LOADER_MS in App.tsx already guarantees the chunk
+ * cannot resolve inside a frame, so the hold-off that used to prevent a flash
+ * would now just eat into the time the loader is visible. Pass a `delay` if
+ * that floor is ever removed.
  */
-export default function RippleLoader({ delay = 140 }: { delay?: number }) {
+export default function RippleLoader({ delay = 0 }: { delay?: number }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
