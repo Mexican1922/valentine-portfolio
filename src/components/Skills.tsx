@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
+import StackIcon from "./StackIcon";
 
 const groups: { title: string; items: string[] }[] = [
   {
@@ -62,10 +63,13 @@ export default function Skills() {
               <h3 className="mb-4 font-mono text-sm font-medium text-accent-500">
                 {g.title}
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {g.items.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-ink-200">
-                    <span aria-hidden className="h-1 w-1 rounded-full bg-accent-500" />
+                  <li
+                    key={item}
+                    className="flex items-center gap-2.5 text-sm text-ink-200"
+                  >
+                    <StackIcon name={item} size={17} className="text-ink-400" />
                     {item}
                   </li>
                 ))}
