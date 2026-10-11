@@ -1,13 +1,44 @@
 export interface LogEntry {
-  date: string; // ISO date
+  date: string; // ISO date; only the month and year are shown
   title: string;
   detail: string;
   tags: string[];
 }
 
-// Newest first. Add an entry every time you ship something. This section
-// is the portfolio's proof of momentum. Dates come from the git history.
+// Newest first. Keep this to the 4 entries that best show the work right
+// now; older entries move to `archivedLog` below and are not rendered.
 export const shippingLog: LogEntry[] = [
+  {
+    date: "2026-10-01",
+    title: "The Future Makers textbooks are on sale",
+    detail:
+      "Wrote the Frontend (HTML, CSS, JavaScript) and Backend (Python, SQL, HTTP) Development Sets: project-based textbooks with write-in workbooks, now used to take tech into Nigerian secondary schools. Available at techplaybook.apex-techhub.com.",
+    tags: ["Teaching", "Author"],
+  },
+  {
+    date: "2026-09-01",
+    title: "Taught the Apex Tech summer class",
+    detail:
+      "Took about 10 young beginners from zero coding experience to each building their own website by the final lesson.",
+    tags: ["Teaching", "EdTech"],
+  },
+  {
+    date: "2026-09-01",
+    title: "Collan passed 2,000 users",
+    detail:
+      "Six months after launch, the social networking platform for techies I co-founded doubled from its first thousand members. V2 and a mobile app are in development.",
+    tags: ["Co-Founder", "SaaS"],
+  },
+  {
+    date: "2026-06-08",
+    title: "Shipped UDA recommendation engine",
+    detail:
+      "Django app generating personalised music suggestions from each user's listening history.",
+    tags: ["Django", "Python"],
+  },
+];
+
+export const archivedLog: LogEntry[] = [
   {
     date: "2026-07-10",
     title: "Rebuilt this portfolio from scratch",
@@ -21,13 +52,6 @@ export const shippingLog: LogEntry[] = [
     detail:
       "Got the job on a Friday with zero Squarespace experience. Learned the platform and shipped the finished site by Sunday. Live at crestforgeconstruction.org.",
     tags: ["Client Work", "Squarespace"],
-  },
-  {
-    date: "2026-06-08",
-    title: "Shipped UDA recommendation engine",
-    detail:
-      "Django app generating music suggestions from per-user listening history.",
-    tags: ["Django", "Python"],
   },
   {
     date: "2026-06-04",

@@ -19,7 +19,7 @@ export const site = {
     proof: "https://x.com/Vibe_with_val/status/2088517731775631751",
   },
   highlights: [
-    "Co-founder of Collan, a social networking platform for techies approaching 2,000 members within months of launch",
+    "Co-founder of Collan, a social networking platform for techies that passed 2,000 members within six months of launch",
     "Client work in production for energy, education, construction, and retail businesses",
     "Full-stack: React 19, TypeScript, Next.js, Django REST, PostgreSQL",
   ],
